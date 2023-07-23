@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  database:
+    build:
+      context: migration
+      dockerfile: Dockerfile
+    ports: 
+      - 3306:3306
+  backend:
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    ports: 
+      - 8800:8800
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    ports: 
+      - 3000:80
+      
