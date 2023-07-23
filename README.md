@@ -22,6 +22,8 @@
   <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/4701b185-9850-4d85-acf2-c9b7a44e7e7f" title="Pulls GitHub"><br/>
   Botões para editar e deletar contatos respectivamente.<br/>
   <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/77d476d3-4ef9-4f08-b5df-de1d315d72ce"><br/>
+  Verifique se o container foi criado e está rodando.<br/>
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/4ad991a9-1abd-421b-a1b6-7cb2a3402971"><br/>
 </p>
 
 # :hammer_and_pick: Tecnologias utilizadas 
@@ -50,7 +52,6 @@ Para executar este projeto localmente, siga estas etapas:
 ```
 Instale as dependências do FrontEnd: npm install ou yarn add;
 Instale as dependências do BackEnd: npm install;
-
 ```
 
 3 - Inicie o servidor de desenvolvimento: 
