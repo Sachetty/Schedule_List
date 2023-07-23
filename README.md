@@ -13,15 +13,15 @@
   Tela de usuários
   <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/874cec8f-9643-49a6-93d3-3455cf198b9c" title="Tela inicial">
   Tela para cadastro, deleção, alteração e visualisação de usuários.
-  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/5b8fdcde-9e73-4d25-8a26-328988badeea"  title="Tela inicial">
-  cadastro, deleção, alteração e visualisação de contatos. 
-  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/866bf113-bd26-4c31-b919-d520333b6436"  title="Tela inicial">
-  Botões para editar, deletar e visualizar os contatos respectivamente.
-  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/2ffd0469-899c-4d46-8a68-23716d5b04f0" title="Pulls">
-  Barra de pesquisa para buscar por nome de usuários .
-  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/4701b185-9850-4d85-acf2-c9b7a44e7e7f" title="Pulls GitHub">
-  Botões para editar e deletar contatos respectivamente..
-  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/77d476d3-4ef9-4f08-b5df-de1d315d72ce">
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/c0608d47-4328-4228-9dcd-270328dab030"  title="Tela inicial">
+  Tela cadastro, deleção, alteração e visualisação de contatos. 
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/866bf113-bd26-4c31-b919-d520333b6436"  title="Tela inicial"> <br/>
+  Botões para editar, deletar e visualizar os contatos respectivamente.<br/>
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/2ffd0469-899c-4d46-8a68-23716d5b04f0" title="Pulls"><br/>
+  Barra de pesquisa para buscar por nome de usuários .<br/>
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/4701b185-9850-4d85-acf2-c9b7a44e7e7f" title="Pulls GitHub"><br/>
+  Botões para editar e deletar contatos respectivamente.<br/>
+  <img src="https://github.com/Sachetty/Schedule_List/assets/70166153/77d476d3-4ef9-4f08-b5df-de1d315d72ce"><br/>
 </p>
 
 # :hammer_and_pick: Tecnologias utilizadas 
