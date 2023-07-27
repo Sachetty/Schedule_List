@@ -8,7 +8,6 @@ function App() {
     
     <Routes>
       <Route path= '/' element={<User/>}/>
-      {/* <Route path= '/:username' element={<User/>}/> */}
       <Route path= '/contact/:userId' element={<Contact/>}/>
     </Routes>
 

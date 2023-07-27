@@ -7,7 +7,6 @@ const typeEnum = {
 
 export const getContact = (req, res) => {
   const query = "SELECT contact.*, user.name AS userName FROM contact INNER JOIN user ON contact.userId = user.userId WHERE contact.userId = ?";
-  
     connection.query(query, [req.params.id], (err, data) => {
       if (err) return res.json(err);
 
@@ -20,21 +19,31 @@ export const getContact = (req, res) => {
   };
 
   export const addContact = (req, res) => {
-    const query =
-      "INSERT INTO contact( `type`, `description`, `userId`) VALUES(?)";
-  
-    const values = [
-      req.body.type,
-      req.body.description,
-      req.body.userId
-    ];
-  
-    connection.query(query, [values], (err) => {
-      if (err) return res.json(err);
-  
-      return res.status(200).json("Contato criado com sucesso.");
-    });
-  };
+  const type = req.body.type;
+  const description = req.body.description;
+  const userId = req.body.userId;
+
+  const query = "SELECT COUNT(*) as count FROM contact WHERE type = ? AND userId = ?";
+  connection.query(query, [type, userId], (err, result) => {
+    if (err) return res.json(err);
+
+    const count = result[0].count;
+
+    if (count > 0) {
+      return res.status(200).json("Já existe um contato com esse tipo para esse usuário.");
+    } else {
+      const insertQuery =
+        "INSERT INTO contact(`type`, `description`, `userId`) VALUES(?, ?, ?)";
+      const values = [type, description, userId];
+
+      connection.query(insertQuery, values, (err) => {
+        if (err) return res.json(err);
+
+        return res.status(200).json("Contato criado com sucesso.");
+      });
+    }
+  });
+};
 
   export const updateContact = (req, res) => {
     const query =

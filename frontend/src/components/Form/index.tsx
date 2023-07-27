@@ -30,7 +30,7 @@ interface Props {
         return;
       }
   
-      if (! user.name || !user.socialSecurity) {
+      if (! user.name || !user.socialSecurity || !isSocialSecurity(socialSecurity)) {
         return alert("Preencha todos os campos!");
       }
   
@@ -56,6 +56,16 @@ interface Props {
         }
       }
     };
+
+    const formatSocialSecurity = (value: string) => {
+      const cpfRegex = /^(\d{3})(\d{3})(\d{3})(\d{2})$/;
+      return value.replace(cpfRegex, "$1.$2.$3-$4");
+    };
+
+    const isSocialSecurity = (cpf: string) => {
+      const cpfRegex = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/;
+      return cpfRegex.test(cpf);
+    };
   
     return (
       <FormContainer onSubmit={handleFormSubmit}>
@@ -69,7 +79,7 @@ interface Props {
         <InputArea>
           <Label>CPF</Label>
           <Input 
-           value={socialSecurity}
+           value={formatSocialSecurity(socialSecurity)}
            onChange={(e) => setSocialSecurity(e.currentTarget.value)}
            />
         </InputArea>
