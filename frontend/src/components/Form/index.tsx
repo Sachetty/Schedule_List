@@ -66,6 +66,12 @@ interface Props {
       const cpfRegex = /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/;
       return cpfRegex.test(cpf);
     };
+
+    const handleSocialSecurity = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const value = e.target.value;
+      const numericValue = value.replace(/\D/g, "");
+      setSocialSecurity(numericValue);
+    };
   
     return (
       <FormContainer onSubmit={handleFormSubmit}>
@@ -80,7 +86,7 @@ interface Props {
           <Label>CPF</Label>
           <Input 
            value={formatSocialSecurity(socialSecurity)}
-           onChange={(e) => setSocialSecurity(e.currentTarget.value)}
+           onChange={handleSocialSecurity}
            />
         </InputArea>
   

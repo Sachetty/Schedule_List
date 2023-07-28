@@ -70,7 +70,6 @@ const FormContact: React.FC<Props> = ({
   };
   const handleDescription = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    isValidDescription(value);
     if (type === 1) {
       const numericValue = value.replace(/\D/g, "");
       setDescription(numericValue);
