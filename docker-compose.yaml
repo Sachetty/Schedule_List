@@ -18,4 +18,8 @@ services:
       dockerfile: Dockerfile
     ports: 
       - 3000:80
+    environment:
+      - WATCHPACK_POLLING=true
+      - GENERATE_SOURCEMAP=false
+      
       

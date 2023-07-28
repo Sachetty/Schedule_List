@@ -30,7 +30,7 @@ export const getContact = (req, res) => {
     const count = result[0].count;
 
     if (count > 0) {
-      return res.status(200).json("Já existe um contato com esse tipo para esse usuário.");
+      return res.status(400).json("Já existe um contato com esse tipo para esse usuário.");
     } else {
       const insertQuery =
         "INSERT INTO contact(`type`, `description`, `userId`) VALUES(?, ?, ?)";
